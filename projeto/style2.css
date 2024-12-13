@@ -1,0 +1,103 @@
+/* Define as cores principais */
+:root {
+    --primary-color: #3498db;  /* Azul */
+    --secondary-color: #e74c3c; /* Vermelho */
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do título */
+h1 {
+    color: var(--primary-color);
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+form button {
+    align-self: center;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+    color: #e74c3c;
+    border: 0.1px solid #e74c3c;
+}
+
+/* Estilo da tabela */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+hr {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
